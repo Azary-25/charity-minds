@@ -1,0 +1,382 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    main{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .nav-logo{
+      display: flex;
+      font-size: 24px;
+      font-style: italic;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      float: left;
+        
+    }
+    .navbar {
+     background-color: rgb(251, 253, 253);
+     align-items: right;
+     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+     height: 60px;
+    }
+    .navbar ul{ 
+        list-style: none;
+        background-color: #fdfeff;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+       
+    }
+    .navbar a{
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      text-align: center;
+     
+    }
+    .navbar a:hover{
+      background-color: #6366f1;
+        color: white;
+     
+    }
+    .navbar li{
+      float: right;
+    }
+  .card-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+            gap: 40px;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            width: 200px;
+            box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .card p {
+            text-align: center;
+            color: #555;
+          
+        }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgb(129, 45, 45);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    padding: 0;
+}
+
+.registration-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: white;
+}
+
+.registration-table thead {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.registration-table th {
+    padding: 18px 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #495057;
+    border-bottom: 3px solid #667eea;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.registration-table th:first-child {
+    padding-left: 25px;
+}
+
+.registration-table th:last-child {
+    padding-right: 25px;
+}
+
+.registration-table tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.registration-table tbody tr:hover {
+    background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.registration-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.registration-table tbody tr:nth-child(even):hover {
+    background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%);
+}
+
+.registration-table td {
+    padding: 16px 15px;
+    color: #495057;
+    border-bottom: 1px solid #e9ecef;
+    vertical-align: middle;
+}
+
+.registration-table td:first-child {
+    padding-left: 25px;
+    font-weight: 600;
+    color: #667eea;
+    background: linear-gradient(135deg, #f8f9ff 0%, #e3f2fd 100%);
+    width: 60px;
+}
+
+.registration-table td:last-child {
+    padding-right: 25px;
+}
+
+/* Email column styling */
+.registration-table td:nth-child(4) {
+    color: #667eea;
+    font-weight: 500;
+}
+
+/* Username column styling */
+.registration-table td:nth-child(5) {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Phone number column styling */
+.registration-table td:nth-child(6) {
+    font-family: 'Courier New', monospace;
+    color: #6c757d;
+}
+
+/* Date column styling */
+.registration-table td:nth-child(7) {
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Gender column styling */
+.registration-table td:nth-child(8) {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.registration-table td:nth-child(8):contains("Female") {
+    color: #e91e63;
+}
+
+.registration-table td:nth-child(8):contains("Male") {
+    color: #2196f3;
+}
+
+/* Responsive design */
+
+
+/* Animation for table load */
+.registration-table tbody tr {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.registration-table tbody tr:nth-child(1) { animation-delay: 0.1s; }
+.registration-table tbody tr:nth-child(2) { animation-delay: 0.2s; }
+.registration-table tbody tr:nth-child(3) { animation-delay: 0.3s; }
+.registration-table tbody tr:nth-child(4) { animation-delay: 0.4s; }
+.registration-table tbody tr:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Gender-specific colors */
+.registration-table tbody tr td:nth-child(8) {
+    position: relative;
+}
+
+.registration-table tbody tr td:nth-child(8):before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: currentColor;
+}
+
+/* Scrollbar styling for table wrapper */
+.table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+}
+ .form-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 30px;
+    }
+ form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    form h2 {
+      margin-top: 0;
+    }
+ form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #1d80e4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+ .form-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 30px;
+    }
+
+    form {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    form h2 {
+      margin-top: 0;
+    }
+
+    form input, form select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #6975DE;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #34495e;
+    }
+ .footer-bottom {
+        display: flex;
+        justify-content: center;
+    }
+    
+    body {
+        font-size: 12pt;
+        line-height: 1.4;
+    }
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 2rem 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+ .card-section {
+        grid-template-columns: 1fr;
+    }
+ .container {
+        grid-template-columns: 1fr;
+    }
+ .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
